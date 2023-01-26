@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>user login</title>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap\bootstrap.min.css">
+
+	<script type="text/css" src="bootstrap\bootstrap.min.css"></script>
+
+	<script src="https://kit.fontawesome.com/9fc9aec19d.js" crossorigin="anonymous"></script>
+
+</head>
+<style type="text/css">
+	@media screen and (max-width: 360px) {
+
+		.user-input input {
+			width: 140px;
+		}
+
+	}
+
+	.nav {
+		position: sticky;
+		top: 0;
+	}
+</style>
+
+<body>
+
+	<div class="nav" style="text-align: left;">
+		<ul>
+			<label class="logo">RKMOBILES</label>
+
+			<li> <a href="index.html"> Home</a></li>
+			<li> <a href="#"> Products</a>
+				<ul>
+                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><a href="laptop.html">Laptop</a></li>
+                    <li><a href="tablet.html">Tablet</a></li>
+                    <li><a href="headphone.html">Headphone</a></li>
+                </ul>
+			</li>
+			<li><a href="index.html #contact">Contact</a></li>
+			<li><a href="index.html #about">About</a></li>
+			<input type="text" name="search" placeholder="Search anything..." class="search">
+			<a href="login.html"><i class="fa-solid fa-user"></i></a>
+			<a href="login.html"><i class="fa-solid fa-cart-shopping"></i></a></pre>
+
+		</ul>
+	</div>
+
+	<div class="log">
+		<div class="main-log">
+			<div class="user-login">
+				<h3 class="login">Login</h3>
+				<form class="#">
+					<div class="main-user">
+						<div class="user-input">
+							<label for="fullname">Full Name</label>
+							<input type="text" name="fullname" placeholder="Enter Full Name" required>
+						</div>
+
+						<div class="user-input">
+							<label for="Username">Username</label>
+							<input type="text" name="username" placeholder="Enter Userame" required>
+						</div>
+
+						<div class="user-input">
+							<label for="email">Email</label>
+							<input type="text" name="email" placeholder="Enter Email" required>
+						</div>
+
+						<div class="user-input">
+							<label for="phonenumber">Phone Number</label>
+							<input type="text" name="phonenumber" placeholder="Enter Phone Number" required>
+						</div>
+
+						<div class="user-input">
+							<label for="password">Password</label>
+							<input type="password" name="password" placeholder="Enter Password" required>
+						</div>
+
+						<div class="user-input">
+							<label for="confirmpassword">Confirm Password</label>
+							<input type="password" name="confirmpassword" placeholder="Enter Confirm Password" required>
+						</div>
+
+						<div class="gender">
+							<span class="gender-tittle">Gender</span>
+							<div class="gender-input">
+
+								<input type="radio" name="gender" id="male" required>
+								<label for="male">Male</label>
+
+								<input type="radio" name="gender" id="female" required>
+								<label for="female">Female</label>
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="form-submit">
+						<input type="submit" name="Register">
+
+					</div>
+
+					<button class="back"> <a href="index.html"><img src="images/back.png" width="22px">
+							Back</a></button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
