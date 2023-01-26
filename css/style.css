@@ -1,0 +1,596 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+    transition: .2s linear;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav {
+    border-style: inset;
+    background-color: blue;
+    /*  position: sticky;
+    top: 0; */
+}
+
+
+.logo {
+    padding: 20px;
+    font-family: Algerian;
+    font-size: 30px;
+    color: white;
+
+}
+
+.nav li {
+    margin-right: 10px;
+    display: inline-flex;
+    position: relative;
+
+}
+
+.nav ul li a {
+    color: yellow;
+    font-size: 17px;
+    padding: 5px 7px;
+    text-decoration: none;
+}
+
+.nav ul li ul li {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav ul li ul {
+    width: 125px;
+    background-color: blue;
+    position: absolute;
+    top: 30px;
+    margin-left: -15px;
+    display: none;
+    
+}
+
+
+.nav ul li:hover ul{
+    display: block;
+}
+.active,
+a:hover {
+    background: #1b9bff;
+}
+
+.active-1,
+a:hover {
+    background: #1b9bff;
+}
+
+.search {
+    position: static;
+    top: o;
+    width: 45%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(../images/searchicon.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 10px 40px 12px 40px;
+
+
+}
+
+
+.nav i {
+    margin-left: 30px;
+    font-size: large;
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+
+/*---------------------------------------------------------------slide-----------------------------------------------------------*/
+
+.containers {
+    width: 100vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 68%;
+    left: 50%;
+    overflow: hidden;
+
+
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.slider img {
+    width: 100%;
+}
+
+
+/* -----------------------------------------------------------products-------------------------------------------------------------*/
+.main {
+    background-color: white;
+
+    margin: 550px 0 0 50px;
+
+}
+
+.main h1 {
+    color: darkred;
+}
+
+.main-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-products div{
+    border-radius:60%; 
+    border: 1px solid black;
+    background: radial-gradient(#53d5ead9,blue);
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+}
+
+.main-products img {
+
+}
+
+.mobiles {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Myriad Pro;
+}
+
+.mobiles .bought {
+    background: #fff;
+    text-align: center;
+    padding: 80px 9px 30px 8px;
+    box-shadow: 5px 5px 15px gray;
+    justify-content: space-between;
+}
+
+
+.mobiles .bought>img {
+    height: 160px;
+    width: auto;
+    opacity: 0.9;
+    transition: .2s;
+}
+
+.mobiles .bought:hover img {
+    opacity: 1.0;
+    transform: scale(1.2);
+}
+
+
+
+.mobiles .bought h3 {
+    font-size: 27px;
+    font-weight: bold;
+    color: #131313;
+    padding: 17px 0px 0px 0px;
+}
+
+
+.red {
+    color: #ff0000;
+}
+
+
+.mobiles .bought span {
+    display: block;
+    color: #19449b;
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 3px;
+}
+
+
+.mobiles .bought i {
+    padding: 0px 2px;
+}
+
+
+.headphones {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Myriad Pro;
+   
+}
+
+.headphones .bought {
+    background: #fff;
+    text-align: center;
+    padding: 80px 10px 30px 10px;
+    box-shadow: 5px 5px 15px gray;
+    justify-content: space-around;
+}
+
+
+.headphones .bought>img {
+    height: 230px;
+    width: auto;
+    opacity: 0.9;
+    transition: .2s;
+}
+
+.headphones .bought:hover img {
+    opacity: 1.0;
+    transform: scale(1.2);
+}
+
+
+.headphones .bought h3 {
+    font-size: 27px;
+    font-weight: bold;
+    color: #131313;
+    padding: 17px 0px 0px 0px;
+}
+
+.headphones .bought span {
+    display: block;
+    color: #19449b;
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 3px;
+}
+
+.headphones .bought i {
+    padding: 0px 2px;
+}
+
+
+
+.button {
+    background-color: yellow;
+    border-style: none;
+    border-radius: 10%;
+    margin-top: 10px;
+    font-size: 17px;
+    color: black;
+    height: 27px;
+    width: 70px;
+}
+
+.button:hover {
+    background-color: darkred;
+    color: yellow;
+}
+
+/*----------------------------------------------------------Drop-Down-Menu----------------------------------------------------------*/
+
+
+
+.drop{
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 15px gray;
+    border-radius: .5rem;
+}
+
+.key{
+    margin: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: #ffe000;
+    color: black;
+    border-style: none;
+    border-radius: 5%;
+    font-size: 15px;
+}
+
+.key:hover{
+    background-color: yellow;
+    font-size: 18px;
+}
+
+.water h1{
+    color: royalblue;
+    text-align: center;
+}
+
+
+
+.water h1 span{
+    color: red;
+}
+
+.water .drop h3 {
+    font-size: 27px;
+    font-weight: bold;
+    color: #131313;
+    padding: 5px 0px 0px 0px;
+}
+
+
+.red {
+    color: #ff0000;
+}
+
+
+.water .drop span {
+    display: block;
+    color: #19449b;
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 3px;
+}
+
+
+.water .drop i {
+    padding: 0px 2px;
+}
+
+.water .drop:hover img {
+    opacity: 1.0;
+    transform: scale(1.1);
+}
+
+.mobiles .bought h2{
+    color: red;
+    text-decoration: underline;
+}
+
+.mobiles .bought ul{
+    list-style: none;
+    color:royalblue;
+    font-size: 15px;
+    cursor: pointer;
+}
+/*------------------------------------------------------------contacts--------------------------------------------------------------*/
+
+.top {
+    background-color: lavender;
+    padding: 25px;
+}
+
+
+
+.btn {
+    background-color: gold;
+    margin-left: 45px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    background-color: lime;
+}
+
+
+.aside ul,
+.aside li {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: yellow;
+    height: 300px;
+}
+
+.aside dt {
+    background: blue;
+    color: #fff;
+    padding: 3px;
+}
+
+.aside dd a{
+    color: #337ab7;
+}
+.aside dd a:hover {
+    text-decoration: underline red 2px;
+    background-color: yellow;
+
+}
+
+.aside ul li {
+    padding: 30px 53px;
+}
+
+.last {
+    padding: 30px 40px 30px 20px;
+    max-width: 220px;
+    border: solid;
+    background-color: cyan;
+    height: 260px;
+}
+
+/*--------------------------------------------------------------login form-------------------------------------------------------------*/
+
+
+.log {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.main-log {
+    display: flex;
+    height: 110vh;
+    justify-content: center;
+    align-items: center;
+    background: url(bg-leaf.jpg);
+}
+
+.user-login {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 28px;
+    border-radius: 10px;
+
+}
+
+.login {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+
+}
+
+.main-user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+
+
+.user-input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input label {
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+
+}
+
+.user-input input {
+    height: 40px;
+    width: 270px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+
+}
+
+.gender-tittle {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.gender {
+    margin: 15px 0;
+    color: white;
+}
+
+.gender-input {
+    padding-top: 15px;
+}
+
+.gender label {
+    padding: 0 20px 0 5px;
+
+}
+
+.gender label,
+.gender input,
+.form-submit input {
+    cursor: pointer;
+}
+
+.form-submit {
+    margin-top: 40px;
+}
+
+.form-submit input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(63, 114, 76, 0.7);
+}
+
+.form-submit input:hover {
+    color: rgb(255, 255, 255);
+    background: rgba(56, 204, 93, 0.7);
+}
+
+.back {
+    float: right;
+    border: none;
+    border-radius: 3px;
+    padding: 9px 20px;
+    margin-top: 30px;
+    background-color: forestgreen;
+    color: rgb(209, 209, 209);
+    display: block;
+    cursor: pointer;
+    width: 25%;
+    font-size: 20px;
+}
+
+
+.back:hover {
+    background-color: lime;
+    color: black;
+}
+
+
+.back:hover a {
+    background-color: lime;
+    color: black;
+}
